@@ -1,0 +1,18 @@
+GOAL: to allow an engineer to park the wind turbine.
+PRIMARY ACTOR: engineer
+SECONDARY ACTORS: wind turbine
+PRECONDITION: engineer has identified themselves with keycard.
+TRIGGER: engineer selects the "park wind turbine" option.
+FLOW OF EVENTS: 1. The system asks the engineer for the password.
+                2. The engineer enters the password.
+                3. The system prompts the user for a confirmation to park the wind turbine.
+                4. The engineer selects the confirm option.
+                5. The system then tells the wind turbine to start the packing up process.
+                6. The system then notifies the engineer that the wind turbine has been successfully parked.
+                7. The system then logs the time, date and engineer who parked the wind turbine.
+EXTENSIONS:     2A - The engineer enters the incorrect password.
+                    1. The system tells the user that the password is incorrect.
+                    2. The use case resumes at step 1.
+                5A. - The system is told that the parking proccess was unsuccessful by the wind turbine.
+                    1. The system notifies the engineer that the parking process was unsuccessful and the wind turbine needs to be inspected physically for why the parking process is being prevented.
+                    2. The use case resumes at step 3.
