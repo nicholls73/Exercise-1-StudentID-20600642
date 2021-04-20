@@ -1,0 +1,3 @@
+1. The system must allow the scientist to record the outside temperature within 1 minute, on average.
+2. The system must allow the electrician to turn off the power to several rooms at least 99.99% of the time.
+3. The system must allow the mechanic to notify that a vehicle is "out of order" within 30 seconds, on average.
