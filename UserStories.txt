@@ -6,5 +6,5 @@
 6. As a electrician I want to beable to switch off power to certain room of the antarctic base so that I can do repairs safely.
 7. As a engineer I want to communicate to the outside world so that I can make requests for what we need in each supply shipments.
 8. As a scientist I want to measure the depth of the ice sheets so that I can collect data for the core scientific mission.
-9. As a engineer I want to change the base's temperature so that it is comfortable for people.
+9. As a engineer I want to manage the bases temperature so that it is comfortable for people.
 10. As a mechanic I want to notify others about which vehicles are "out of order" so that they don't try to use them.
