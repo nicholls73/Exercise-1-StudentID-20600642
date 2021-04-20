@@ -1,0 +1,17 @@
+GOAL: to allow a chef to view the amount of food in stock
+PRIMARY ACTOR: chef
+SECONDARY ACTORS: database
+PRECONDITIONS: chef has identified themselves with keycard to the system and database has data in it
+TRIGGER: chef selects the "view stock" option
+FLOW OF EVENTS: 1. The system asks for the password.
+                2. The chef enters the password.
+                3. The system recieves the stock data from the database.
+                4. The system displays the stock data.
+                5. When the chef is finished looking at the stock data he selects the "close" option.
+                6. The system sends any changes to the database.
+EXTENSIONS:     2A - The chef enters the incorrect password.
+                    1. The system displays that the password is incorrect.
+                    2. The use case resumes at step 1.
+                3A - The system can not make connection with the database.
+                    1. The system display that it cannot make connection with the database and that it will need to be fixed to display the stock data.
+                    2. The use case resumes at step 3.

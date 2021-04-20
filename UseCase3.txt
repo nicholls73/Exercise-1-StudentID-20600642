@@ -1,0 +1,24 @@
+GOAL: to allow an electrician to switch power off to select rooms
+PRIMARY ACTOR: electrician
+SECONDARY ACTOR: power controller
+PRECONDITION: electrician has identified themselves with keycard to the system
+TRIGGER: electrician selects the "master power control" option
+FLOW OF EVENTS: 1. The system asks for the password.
+                2. The electrician enters the password.
+                3. The system displays each room, if the power is on/off in a "list view" for each and a "map view" option.
+                4. The electrician selects on/off depending on what rooms he want to have power and not have.
+                5. Once done the electrician selects the "confirm" option.
+                6. The system sends the request to the power controller.
+                7. The power controller returns the system if the request was successful.
+                8. The system displays that the change was successful.
+                9. The system logs the time, date and identity of who made the change.
+EXTENTIONS:     2A - The electrician enters the incorrect password.
+                    1. The system dislays that the password is incorrect.
+                    2. The use case resumes at step 1.
+                3A - The electrician selects the "map view" option.
+                    1. The system displays the data on a "map view" and a "list view" option.
+                    2. The use case resumes at step 4.
+                7A - The power controller returns the system that the request was unsuccessful.
+                    1. The system displays that there was an error and the change was unsuccessful.
+                    2. The use case resumes at step 3.
+
