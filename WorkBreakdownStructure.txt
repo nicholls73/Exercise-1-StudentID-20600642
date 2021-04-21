@@ -1,0 +1,16 @@
+1. Repair damaged wiring in base
+2. Prepare for blizzard
+    2.1 Park wind turbine
+    2.2 Activate/deactivate backup diesel generators
+3. Manage bases comfort
+4. Manage food stock
+    4.1 Stocktake of food stock
+    4.2 Order food supplies
+5. Maintain vehicles
+    5.1 View location of vehicles
+    5.2 Vehicle check-up
+    5.3 Repair any damaged vehicles
+    5.4 Test vehicles
+6. Conduct research
+    6.1 Measure external temperature
+    6.2 Measure ice sheet depth
