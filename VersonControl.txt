@@ -1,0 +1,37 @@
+1. When the system is set up a new file would be created and git will need to be initialised.
+
+To initialise git: "git init"
+
+2. Now that git is ready to be used when a user wants to begin using git they would have to log their name and email so that an author can be put to the work done.
+
+To enter name: "git config --global user.name "(name)""
+To enter email: "git config user.email "(email)""
+
+3. Depending on what task or aspect of the research they are working on, different branches will be created. Such as:
+"Research_Data" for scientists to use to record data.
+"Vehicle_Maintenance" for mechanics to use to log any damage and/or repairs to vehicles.
+"Rescue_Reports" used by SAR officers to log any rescue reports.
+"Food_Stock_Log" will be used by chefs to keep record of food stock changes.
+"Blizzard_Reports" will be used by engineers to archive reports made when blizzards happen.
+"Electrical_Fault_Reports" will be used by electricians to log any electrical faults that happen in the base.
+"master" which is the base branch and holds the final work.
+
+To create a branch: "git branch (branch name)"
+To change branches: "git checkout (branch name)"
+
+4. When files are being created or modified they will need to be added and committed. It also helps for users to beable to view the status of the files and log of commits done.
+
+To add a file: "git add (file name)"
+To commit files added: "git commit -m "(comments on commit)""
+To view files status: "git status"
+To view log of commits: "git log" NOTE --graph can be used to add pathlike lines on the left which make it easy to view branches and --branches can be used to view all branches (including archived branches)
+
+5. When work done in a branch and needs to be updated to the master branch the team will merge the branch they used with the master branch. If a branch is no longer needed it can be archived then deleted.
+
+To merge branch: "git merge (branch name)" NOTE: merges (branch name) with current branch user is in
+To achive branch: "git tag archive/(branch name) (branch name)"
+To delete branch: "git branch -d (branch name)"
+
+6. The git file can be pushed to a central server respository to make it viewable by others that don't have access to the local respository. This should be done at the end of the day to load the days worth of work onto the central respository.
+
+To push to a remote respository: "git push -u origin (branch name)" NOTE: "git push" will just push the current branch you are in.
