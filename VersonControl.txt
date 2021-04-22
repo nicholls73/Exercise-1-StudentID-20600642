@@ -34,4 +34,5 @@ To delete branch: "git branch -d (branch name)"
 
 6. The git file can be pushed to a central server respository to make it viewable by others that don't have access to the local respository. This should be done at the end of the day to load the days worth of work onto the central respository.
 
-To push to a remote respository: "git push -u origin (branch name)" NOTE: "git push" will just push the current branch you are in.
+To choose remote central repository; "git remote add origin (repository link)"
+To push to a remote respository: "git push -u origin (branch name)"
